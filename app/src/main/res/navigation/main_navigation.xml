@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/listUserFragment">
+    <fragment
+        android:id="@+id/listUserFragment"
+        android:name="com.example.submissionandroidfundamental.presentation.listuser.ListUserFragment"
+        android:label="ListUserFragment">
+        <action
+            android:id="@+id/action_listUserFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.example.submissionandroidfundamental.presentation.detailuser.DetailUserFragment"
+        android:label="DetailUserFragment">
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.submissionandroidfundamental.presentation.detailuser.tablayout.following.FollowingViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.detailuser.tablayout.followrs.FollowersFragment">
+
+        <com.kennyc.view.MultiStateView
+            android:id="@+id/msvFollowing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:msv_animateViewChanges="true"
+            app:msv_emptyView="@layout/empty_data"
+            app:msv_loadingView="@layout/shimmer_fragment_user"
+            app:msv_viewState="content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFollowing"
+                listSearchUser="@{viewModel.data}"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+                tools:listitem="@layout/item_search_user" />
+
+        </com.kennyc.view.MultiStateView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

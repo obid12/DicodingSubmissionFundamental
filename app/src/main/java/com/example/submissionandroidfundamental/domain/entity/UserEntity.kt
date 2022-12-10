@@ -1,4 +1,4 @@
-package com.example.submissionandroidfundamental
+package com.example.submissionandroidfundamental.domain.entity
 
 import android.os.Parcelable
 import androidx.annotation.Keep
@@ -7,7 +7,7 @@ import kotlinx.android.parcel.Parcelize
 @Suppress("DEPRECATED_ANNOTATION")
 @Keep
 @Parcelize
-data class User(
+data class UserEntity(
     val username: String,
     val name: String,
     val location: String,
@@ -15,5 +15,6 @@ data class User(
     val company: String,
     val follower: Int,
     val following: Int,
-    val avatar: Int
-):Parcelable
+    val avatar: Int,
+    val avatarUrl:String
+) : Parcelable

@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">SubmissionAndroidFundaMental</string>
 
-    <string name="heroes_name">Nama Pahlawan</string>
-    <string name="description">Deskripsi</string>
     <string name="lbl_repository">repository</string>
     <string name="lbl_github">github</string>
     <string name="lbl_followers">followers</string>
@@ -11,107 +9,7 @@
     <string name="txt_path_github">M512,0C229.12,0 0,229.12 0,512C0,738.56 146.56,929.92 350.08,997.76C375.68,1002.24 385.28,986.88 385.28,973.44C385.28,961.28 384.64,920.96 384.64,878.08C256,901.76 222.72,846.72 212.48,817.92C206.72,803.2 181.76,757.76 160,745.6C142.08,736 116.48,712.32 159.36,711.68C199.68,711.04 228.48,748.8 238.08,764.16C284.16,841.6 357.76,819.84 387.2,806.4C391.68,773.12 405.12,750.72 419.84,737.92C305.92,725.12 186.88,680.96 186.88,485.12C186.88,429.44 206.72,383.36 239.36,347.52C234.24,334.72 216.32,282.24 244.48,211.84C244.48,211.84 287.36,198.4 385.28,264.32C426.24,252.8 469.76,247.04 513.28,247.04C556.8,247.04 600.32,252.8 641.28,264.32C739.2,197.76 782.08,211.84 782.08,211.84C810.24,282.24 792.32,334.72 787.2,347.52C819.84,383.36 839.68,428.8 839.68,485.12C839.68,681.6 720,725.12 606.08,737.92C624.64,753.92 640.64,784.64 640.64,832.64C640.64,901.12 640,956.16 640,973.44C640,986.88 649.6,1002.88 675.2,997.76C877.44,929.92 1024,737.92 1024,512C1024,229.12 794.88,0 512,0Z</string>
     <string name="txt_path_github_white">M512,0C229.12,0 0,229.12 0,512C0,738.56 146.56,929.92 350.08,997.76C375.68,1002.24 385.28,986.88 385.28,973.44C385.28,961.28 384.64,920.96 384.64,878.08C256,901.76 222.72,846.72 212.48,817.92C206.72,803.2 181.76,757.76 160,745.6C142.08,736 116.48,712.32 159.36,711.68C199.68,711.04 228.48,748.8 238.08,764.16C284.16,841.6 357.76,819.84 387.2,806.4C391.68,773.12 405.12,750.72 419.84,737.92C305.92,725.12 186.88,680.96 186.88,485.12C186.88,429.44 206.72,383.36 239.36,347.52C234.24,334.72 216.32,282.24 244.48,211.84C244.48,211.84 287.36,198.4 385.28,264.32C426.24,252.8 469.76,247.04 513.28,247.04C556.8,247.04 600.32,252.8 641.28,264.32C739.2,197.76 782.08,211.84 782.08,211.84C810.24,282.24 792.32,334.72 787.2,347.52C819.84,383.36 839.68,428.8 839.68,485.12C839.68,681.6 720,725.12 606.08,737.92C624.64,753.92 640.64,784.64 640.64,832.64C640.64,901.12 640,956.16 640,973.44C640,986.88 649.6,1002.88 675.2,997.76C877.44,929.92 1024,737.92 1024,512C1024,229.12 794.88,0 512,0Z</string>
     <string name="txt_todo">TODO</string>
-    <string-array name="username">
-        <item>JakeWharton</item>
-        <item>amitshekhariitbhu</item>
-        <item>romainguy</item>
-        <item>chrisbanes</item>
-        <item>tipsy</item>
-        <item>ravi8x</item>
-        <item>jasoet</item>
-        <item>budioktaviyan</item>
-        <item>hendisantika</item>
-        <item>sidiqpermana</item>
-    </string-array>
 
-    <string-array name="name">
-        <item>Jake Wharton</item>
-        <item>Amit Shekhar</item>
-        <item>Romain Guy</item>
-        <item>Chris Banes</item>
-        <item>David</item>
-        <item>Ravi Tamada</item>
-        <item>Deny Prasetyo</item>
-        <item>Budi Oktaviyan</item>
-        <item>Hendi Santika</item>
-        <item>Sidiq Permana</item>
-    </string-array>
+    
 
-    <string-array name="location">
-        <item>Pittsburgh, PA, USA</item>
-        <item>New Delhi, India</item>
-        <item>California</item>
-        <item>Sydney, Australia</item>
-        <item>Trondheim, Norway</item>
-        <item>India</item>
-        <item>Kotagede, Yogyakarta, Indonesia</item>
-        <item>Jakarta, Indonesia</item>
-        <item>Bojongsoang - Bandung Jawa Barat</item>
-        <item>Jakarta Indonesia</item>
-    </string-array>
-
-    <string-array name="repository">
-        <item>102</item>
-        <item>37</item>
-        <item>9</item>
-        <item>30</item>
-        <item>56</item>
-        <item>28</item>
-        <item>44</item>
-        <item>110</item>
-        <item>1064</item>
-        <item>65</item>
-    </string-array>
-
-    <string-array name="company">
-        <item>Google, Inc.</item>
-        <item>MindOrksOpenSource</item>
-        <item>Google</item>
-        <item>Google working on @android</item>
-        <item>Working Group Two</item>
-        <item>AndroidHive | Droid5</item>
-        <item>gojek-engineering</item>
-        <item>KotlinID</item>
-        <item>JVMDeveloperID @KotlinID @IDDevOps</item>
-        <item>Nusantara Beta Studio</item>
-    </string-array>
-
-    <string-array name="followers">
-        <item>56995</item>
-        <item>5153</item>
-        <item>7972</item>
-        <item>14725</item>
-        <item>788</item>
-        <item>18628</item>
-        <item>277</item>
-        <item>178</item>
-        <item>428</item>
-        <item>465</item>
-    </string-array>
-
-    <string-array name="following">
-        <item>12</item>
-        <item>2</item>
-        <item>0</item>
-        <item>1</item>
-        <item>0</item>
-        <item>3</item>
-        <item>39</item>
-        <item>23</item>
-        <item>61</item>
-        <item>10</item>
-    </string-array>
-
-    <string-array name="avatar">
-        <item>@drawable/user1</item>
-        <item>@drawable/user2</item>
-        <item>@drawable/user3</item>
-        <item>@drawable/user4</item>
-        <item>@drawable/user5</item>
-        <item>@drawable/user6</item>
-        <item>@drawable/user7</item>
-        <item>@drawable/user8</item>
-        <item>@drawable/user9</item>
-        <item>@drawable/user10</item>
-    </string-array>
 </resources>
