@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/listUserFragment">
     <fragment
         android:id="@+id/listUserFragment"
@@ -9,6 +10,9 @@
         <action
             android:id="@+id/action_listUserFragment_to_detailUserFragment"
             app:destination="@id/detailUserFragment" />
+        <action
+            android:id="@+id/action_listUserFragment_to_cobaActivity"
+            app:destination="@id/cobaActivity" />
     </fragment>
     <fragment
         android:id="@+id/detailUserFragment"
@@ -18,4 +22,13 @@
             android:name="userName"
             app:argType="string" />
     </fragment>
+    <activity
+        android:id="@+id/cobaActivity"
+        android:name="com.example.submissionandroidfundamental.presentation.coba.CobaActivity"
+        android:label="activity_coba"
+        tools:layout="@layout/activity_coba" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </activity>
 </navigation>

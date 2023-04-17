@@ -90,7 +90,7 @@ class ListUserFragment : Fragment() {
         get() {
             return ListSearchUserAdapter(ListSearchUserAdapter.OnClick {
                 findNavController().navigate(
-                    ListUserFragmentDirections.actionListUserFragmentToDetailUserFragment(
+                    ListUserFragmentDirections.actionListUserFragmentToCobaActivity(
                         it?.login!!
                     )
                 )

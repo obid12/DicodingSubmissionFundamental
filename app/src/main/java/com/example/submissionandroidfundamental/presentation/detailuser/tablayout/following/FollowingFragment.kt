@@ -9,7 +9,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.flowWithLifecycle
 import androidx.lifecycle.lifecycleScope
 import com.example.submissionandroidfundamental.databinding.FragmentFollowingBinding
-import com.example.submissionandroidfundamental.presentation.listuser.ListSearchUserAdapter
 import com.example.submissionandroidfundamental.utils.SectionPagerAdapter.Companion.ARGS_USERNAME
 import com.kennyc.view.MultiStateView
 import dagger.hilt.android.AndroidEntryPoint
@@ -62,13 +61,9 @@ class FollowingFragment : Fragment() {
 
     }
 
-    private val followingAdapter: ListSearchUserAdapter
+    private val followingAdapter: ListFollowingUserAdapter
         get() {
-            return ListSearchUserAdapter(
-                ListSearchUserAdapter.OnClick {
-
-                }
-            )
+            return ListFollowingUserAdapter()
         }
 
 }

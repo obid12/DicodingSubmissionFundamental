@@ -14,13 +14,13 @@ interface Repository {
             Flow<Result<UserEntity, UserResponse>>
 
     suspend fun searchUser(searchQuery: String?):
-            Flow<Result<MutableList<UserSearchEntity>, SearchUserResponse>>
+            Flow<Result<ArrayList<UserSearchEntity>, SearchUserResponse>>
 
     suspend fun getListFollowers(username: String):
             Flow<Result<
-                    MutableList<UserSearchEntity>, MutableList<UserSearch>>>
+                    ArrayList<UserSearchEntity>, ArrayList<UserSearch>>>
 
     suspend fun getListFollowing(username: String):
             Flow<Result<
-                    MutableList<UserSearchEntity>, MutableList<UserSearch>>>
+                    ArrayList<UserSearchEntity>, ArrayList<UserSearch>>>
 }

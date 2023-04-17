@@ -32,32 +32,31 @@ class RepositoryImplementation @Inject constructor(
         }
     }
 
-    override suspend fun searchUser(searchQuery: String?): Flow<Result<MutableList<UserSearchEntity>, SearchUserResponse>> {
+    override suspend fun searchUser(searchQuery: String?): Flow<Result<ArrayList<UserSearchEntity>, SearchUserResponse>> {
         return flow {
             val response = apiClient.searchUser(searchQuery)
             delay(1000)
             if (response.isSuccessful) {
-                val data = mutableListOf<UserSearchEntity>()
-                val body = response.body()?.items
-                body?.forEach {
-                    data.add(it.toUserSearchEntity())
+                response.body()?.let {
+                    val data = SearchUserResponse.transform(it)
+                    emit(Result.Success(data.items))
                 }
-                emit(Result.Success(data))
+
             } else {
                 response.errorBody()
             }
         }
     }
 
-    override suspend fun getListFollowers(username: String): Flow<Result<MutableList<UserSearchEntity>, MutableList<UserSearch>>> {
+    override suspend fun getListFollowers(username: String): Flow<Result<ArrayList<UserSearchEntity>, ArrayList<UserSearch>>> {
         return flow {
             val response = apiClient.getListFollowers(username)
             delay(1000)
             if (response.isSuccessful) {
-                val data = mutableListOf<UserSearchEntity>()
+                val data = arrayListOf<UserSearchEntity>()
                 val body = response.body()
                 body?.forEach {
-                    data.add(it.toUserSearchEntity())
+                    data.add(UserSearch.toUserSearchEntity(it))
                 }
                 emit(Result.Success(data))
             } else {
@@ -66,15 +65,15 @@ class RepositoryImplementation @Inject constructor(
         }
     }
 
-    override suspend fun getListFollowing(username: String): Flow<Result<MutableList<UserSearchEntity>, MutableList<UserSearch>>> {
+    override suspend fun getListFollowing(username: String): Flow<Result<ArrayList<UserSearchEntity>, ArrayList<UserSearch>>> {
         return flow {
             val response = apiClient.getListFollowing(username)
             delay(1000)
             if (response.isSuccessful) {
-                val data = mutableListOf<UserSearchEntity>()
+                val data = arrayListOf<UserSearchEntity>()
                 val body = response.body()
                 body?.forEach {
-                    data.add(it.toUserSearchEntity())
+                    data.add(UserSearch.toUserSearchEntity(it))
                 }
                 emit(Result.Success(data))
             } else {

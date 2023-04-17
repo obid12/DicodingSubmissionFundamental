@@ -23,10 +23,10 @@ interface ApiClient {
     @GET("users/{username}/followers")
     suspend fun getListFollowers(
         @Path("username") username: String
-    ): Response<List<UserSearch>>
+    ): Response<ArrayList<UserSearch>>
 
     @GET("users/{username}/following")
     suspend fun getListFollowing(
         @Path("username") username: String
-    ): Response<MutableList<UserSearch>>
+    ): Response<ArrayList<UserSearch>>
 }
